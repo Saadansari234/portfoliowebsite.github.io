@@ -1,0 +1,379 @@
+/* lange: Plus Jakarta Sans & open sans. & poppins */
+*{
+   padding: 0;
+   margin: 0;
+font-family: 'Courier New', Courier, monospace !important;
+scroll-behavior: smooth;
+}
+
+.menu ul{
+  font-family: 'Courier New';
+  font-weight: bold;
+  display: flex;
+list-style: none;
+background-color: #d082a3;
+height: 10vh;
+width: 100%;
+justify-content: right;
+position: fixed;
+z-index: 1;
+
+}
+
+.menu ul li {
+    margin-right: 3rem ;
+
+    margin-top: 1.5rem;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: aqua;
+    
+}
+
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+
+.home div{
+
+ background-image: url(images/pic7.svg);
+ color: aqua;
+ background-size: cover;
+ height: 100vh;
+ padding: 0;
+ margin: 0;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+
+}
+/* these color has been use */
+/* #698ea9 */
+/* #e06368 */
+/* aqua */
+.home h1 {
+    
+    font-family: "poppins";
+     font-weight: 400;
+}
+.home span{
+    position: relative;
+    font-family: 'Courier New';
+    font-weight: 500;
+    font-size: 3rem;
+    color: black;
+
+}
+
+.home span::before{
+    content: "~SAAD~";
+    color: aqua;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-right: 0.4rem solid aqua;
+    animation: flow 3s linear infinite;
+    overflow: hidden;
+}
+@keyframes flow{
+    0% {width: 0%;}
+    50% {width: 100%;}
+    100% {width: 0%;}
+}
+
+.home h3{
+    
+    font-family: 'Courier New';
+    font-weight: 500;
+}
+/* this is about section */
+.about {
+ height: 100vh;
+background-image: url(images/pic6.svg);
+background-size: cover;
+display: inline-block;
+width: 100%;
+position: relative;
+}
+
+.motive {
+    font-size: 1.3rem;
+    color:aqua;
+    position: absolute;
+    margin-left: 20rem;
+    margin-top: 15rem;
+    width: 60%;
+}
+
+.dot{
+   float: right;
+   margin-right: 8rem;
+   margin-top: 8rem;   
+  
+}
+
+
+
+
+.dot h1{
+    position: absolute;
+ border: 0px solid black;
+ background-color: darkorange;
+ box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+ border-radius: 50%;
+ /* margin-top: 2px;
+ margin-top: 5rem;
+ margin-left: -8rem; */
+ width: 5rem;
+ height: 5rem;
+animation: colorchange1 2s linear infinite ;
+}
+
+@keyframes colorchange1{
+    from {background-color: darkorange;}
+    to {background-color: yellow;}
+}
+
+
+
+.dot h2{
+    position: absolute;
+ border: 0px solid black;
+ background-color: darkorange;
+ box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+ border-radius: 50%;
+ width: 3rem;
+ height: 3rem;
+ margin-top: 6rem;
+ animation: colorchange2 2s linear infinite ;
+}
+@keyframes colorchange2{
+    from {background-color: darkorange;}
+    to {background-color: yellow;}
+}
+
+.dot h3{
+    position: absolute;
+ border: 0px solid black;
+ background-color: darkorange;
+ box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+ border-radius: 50%;
+ width: 1rem;
+ height: 1rem;
+ margin-top: 10rem;
+ animation: colorchange3 2s linear infinite ;
+}
+@keyframes colorchange3{
+    from {background-color: darkorange;}
+    to {background-color: yellow;}
+}
+
+
+/* here start our work section */
+
+.work {
+    background-color:#052034 ;
+    margin-top: -4px;
+    padding: 0;
+    height: 130vh;
+    width: 100%;
+    color: aqua;
+}
+
+.mywork {
+    font-family: 'Courier New';
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    text-decoration: underline;
+    padding-top: 3rem;
+    font-weight: 500;
+}
+
+.work div{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+    
+}
+
+.work div a img{
+    opacity: 0.6;
+}
+
+.work span{
+    animation: colorchange5 2s linear infinite ;
+}
+
+@keyframes colorchange5{
+    from{color: blue;}
+    to{color: red;}
+}
+
+.mywork-content{
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.715);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.764);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    font-family: 'Courier New';
+    font-weight: 500;
+
+}
+
+.work span{
+    /* color: darkblue; */
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.work div a{
+    border: 1px solid black;
+    background-color: transparent;
+    background-color: rgb(137, 137, 201);
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+border: none;
+
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+}
+
+#button  {
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: darkgray;
+    color: black;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.764);
+    
+}
+
+/* .button button a {
+    text-decoration: none;
+} */
+
+/* this section is for our contact */
+
+.contact{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.338));
+
+}
+
+.contact h1{
+   font-family: "poppins";
+
+}
+.contact h2{
+ margin-top: 1.5rem;
+ border: 3px solid darkgray;
+ border-radius: 2rem;
+ padding: 1rem 2rem;
+ color: darkgray;
+
+}
+.details{
+margin-top: 2rem;
+font-family: "poppins";
+font-weight: bold;
+}
+
+.details a {
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.details a span {
+   margin-left: 0.4rem;
+   margin-top: 0.6rem;
+
+}
+
+.details a:hover{
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+
+}
+.dot2{
+    position: absolute;
+    border: 0px solid black;
+     background: linear-gradient(to right, white, #b47272);;
+    box-shadow: 0px 1rem 1rem rgba(0, 0, 0, 0.511);
+    border-radius: 50%;
+    /* margin-top: 2px;
+    margin-top: 5rem;
+    margin-left: -8rem; */
+    width: 3rem;
+    height: 3rem;
+    margin-left: 50rem;
+    margin-top: -17rem;
+    transform: rotate(45deg);
+    animation: beat 5s linear infinite;    
+    
+}
+
+
+
+@keyframes beat{
+    0% {transform: rotate(45deg) scale(1);}
+    20% {transform: rotate(45deg) scale(1.4);}
+    40% {transform: rotate(45deg) scale(1);}
+    60% {transform: rotate(45deg) scale(1.2);}
+    80% {transform: rotate(45deg) scale(1);}
+    100% {transform: rotate(45deg) scale(1);}
+  }
+
+
+/* this section is for copyright */
+
+.copyright{
+    background-color: rgba(0, 0, 0, 0.563);
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+     
+}
+
+.copyright a{
+    text-decoration: none;
+    color: black;
+}
+
+.copyright a span{
+    padding-left: 7px;
+
+}
+
+
+
+
+
+
