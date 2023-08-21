@@ -2,16 +2,16 @@
 *{
    padding: 0;
    margin: 0;
-font-family: 'Courier New', Courier, monospace !important;
+/* font-family: 'Courier New', Courier, monospace !important; */
 scroll-behavior: smooth;
 }
 
 .menu ul{
-  font-family: 'Courier New';
+  font-family: 'serif';
   font-weight: bold;
   display: flex;
 list-style: none;
-background-color: #d082a3;
+background-color: #d082a3fd;
 height: 10vh;
 width: 100%;
 justify-content: right;
@@ -21,8 +21,9 @@ z-index: 1;
 }
 
 .menu ul li {
-    margin-right: 3rem ;
 
+    margin-right: 3rem ;
+   font-size: 1.2rem;
     margin-top: 1.5rem;
 }
 
@@ -59,6 +60,7 @@ z-index: 1;
     
     font-family: "poppins";
      font-weight: 400;
+     font-size: 3rem;
 }
 .home span{
     position: relative;
@@ -66,6 +68,7 @@ z-index: 1;
     font-weight: 500;
     font-size: 3rem;
     color: black;
+    font-weight: 800;
 
 }
 
@@ -88,8 +91,9 @@ z-index: 1;
 
 .home h3{
     
-    font-family: 'Courier New';
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    
 }
 /* this is about section */
 .about {
@@ -186,7 +190,7 @@ animation: colorchange1 2s linear infinite ;
 }
 
 .mywork {
-    font-family: 'Courier New';
+    font-family: "serif";
     display: flex;
     justify-content: center;
     font-style: italic;
@@ -204,6 +208,9 @@ animation: colorchange1 2s linear infinite ;
 
 .work div a img{
     opacity: 0.6;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .work span{
